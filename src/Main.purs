@@ -25,8 +25,10 @@ showCoordinate coord = show(coord.x) ++ "," ++ show(coord.y)
 foreign import replaceTextStandard
 "function replaceTextStandard(id) {\
 \   return function(line) {\
-\       var text = document.getElementById(id);\
-\       text.innerHTML = line; \
+\       return function() {\
+\           var text = document.getElementById(id);\
+\           text.innerHTML = line; \
+\       };\
 \   };\
 \}" :: forall eff. String -> String -> Eff (dom :: DOM | eff) Unit
 
