@@ -9,8 +9,7 @@ Useful things
 
 ### Books
 
-Purescript by Example by Phil Freeman
-[Purescript by Example](https://leanpub.com/purescript/read)
+[Purescript by Example](https://leanpub.com/purescript/read) - by Phil Freeman
 
 ### 24 days of purescript
 
