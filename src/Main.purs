@@ -16,7 +16,7 @@ type CoordType = { x::Number, y::Number }
 -- Coord.create = function(value0) { return new Coord(value0); }
 data Coord = Coord { x::Number, y::Number }
 
--- The dot operator is not used for functional composition
+-- The dot operator is not used for function composition
 -- A dot is used as a field accessor for records/objects
 showCoordinate :: CoordType -> String
 showCoordinate coord = show(coord.x) ++ "," ++ show(coord.y)
